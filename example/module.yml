@@ -1,0 +1,9 @@
+name: # module name - displayed in the web page (should have spaces, uppercase as needed)
+challenges: # list each challenge, make a directory for each challenge (must match the id)
+  - id: # lowercase, no spaces
+    name: # short descriptive name of the challenge
+    allow_privileged: # true allows practice mode, false hides practice mode
+    # There are more flags like "password" that are not listed here
+  - id: example
+    name: This is an Example Module
+    allow_privileged: false
