@@ -1,6 +1,5 @@
 id: crypto # create a unique id name (this is displayed in the URL). Must be lowercase, no spaces. Should be a simplified version of the name.
 name: Cryptography # a short descriptive name for the Dojo (this is what is displayed in the Dojo list on the website)
-type: # optional, a way to group Dojos together (ex. "roadshow")
 award:
   emoji: 🔑 # optional, an emoji to be displayed by the username upon completion
 modules: # each module needs a directory with the same name in the repository
