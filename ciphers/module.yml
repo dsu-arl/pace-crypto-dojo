@@ -1,8 +1,8 @@
 name: Ciphers # module name - displayed in the web page (should have spaces, uppercase as needed)
 challenges: # list each challenge, make a directory for each challenge (must match the id)
-  - id: caesar_encrypt
+  - id: caesarencrypt
     name: Caesar Cipher Encryption
     allow_privileged: false
-  - id: caesar_decrypt
+  - id: caesardecrypt
     name: Caesar Cipher Decryption
     allow_privileged: false
