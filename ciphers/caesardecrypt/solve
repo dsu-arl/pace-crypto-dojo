@@ -35,9 +35,26 @@ def display_alphabet_with_indices():
 # Main function to execute the cipher game
 def play_cipher_game():
     print("Welcome to the Caesar Cipher Shifter!")
-    word_list = ["Hello", "Cyber", "Mink"]
+    word_list = [
+        "Apple",
+        "Mango",
+        "Grape",
+        "Peach",
+        "Berry",
+        "Plum",
+        "Lemon",
+        "Banana",
+        "Cherry",
+        "Kiwi",
+        "Apricot",
+        "Papaya",
+        "Coconut",
+        "Orange",
+        "Melon"
+    ]
+
     secret = random.choice(word_list).upper()
-    shift = random.randint(1, 25)
+    shift = random.randint(3, 10)
 
     shifted_word = caesar_cipher_shift(secret, shift)
 
@@ -53,6 +70,7 @@ def play_cipher_game():
         guess = input(f"Decipher this character - {shifted_char}: ").upper()
         if guess != original_char:
             print("\nSorry, that letter was not correct. Try again!")
+            print(f"The secret word {shifted_word} shifted by -{shift} would decrypt to {secret}.")
             print("Hint: For each letter, look at the table and subtract the amount it has been shifted by.")
             print("And remember, the cipher will wrap around if you need to subtract past the letter 'A'")
             return

@@ -35,15 +35,32 @@ def display_alphabet_with_indices():
 # Main function to execute the cipher game
 def play_cipher_game():
     print("Welcome to the Caesar Cipher Encrypter!")
-    word_list = ["Hello", "Cyber", "Mink"]
+    word_list = [
+        "Blue",
+        "Gray",
+        "Pink",
+        "Green",
+        "Brown",
+        "Gold",
+        "Lime",
+        "Cyan",
+        "Peach",
+        "Black",
+        "Red",
+        "White",
+        "Purple",
+        "Tan",
+        "Olive"
+    ]
+
     secret = random.choice(word_list).upper()
     shift = random.randint(3, 8)
 
-    print(f"Your task is to encrypt the secret word: {secret}")
+    print(f"Your task is to encrypt this word: {secret}")
     print("You can use this table to help you!\n")
     display_alphabet_with_indices()
 
-    print(f"\nThe shift amount is +{shift}. Move each letter forward by {shift}.\n")
+    print(f"\nYou need to encrypt your word with a shift of +{shift}. Move each letter forward by {shift}.\n")
 
     # Encrypt the secret word with the actual shift for comparison
     encrypted_secret = caesar_cipher_shift(secret, shift)
