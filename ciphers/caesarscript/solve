@@ -25,10 +25,16 @@ def caesar_cipher_shift(word, shift):
 
 # Main function to execute the cipher game
 def play_cipher_game():
-    # get secret word from config file
-    secret = (pathlib.Path(__file__).parent / ".config").read_text().strip().upper()
-    
-    shift = 17 # making shift constant
+
+    # Get the path to the .config file
+    config_path = Path(__file__).parent / ".config"
+
+    # Read and process the lines from the .config file
+    lines = config_path.read_text().splitlines()
+
+    # Extract the word and the number
+    secret = lines[0].strip().upper()  # First line as uppercase word
+    shift = int(lines[1].strip())  # Second line as an integer
 
     # Encrypt the word and print the ciphertext
     encrypted_secret = caesar_cipher_shift(secret, shift)
