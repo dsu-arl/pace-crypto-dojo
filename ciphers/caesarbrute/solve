@@ -40,7 +40,7 @@ def play_cipher_game():
     encrypted_secret = caesar_cipher_shift(secret, shift)
     print(f"What if you aren't given the shift amount?")
     print("For this challenge you'll have to use frequency analysis or brute forcing to decode the secret word!")
-    print("(Hint: All secret words are types of animals - this will help you confirm that your guess is correct")
+    print("(Hint: All secret words are types of animals - this will help you confirm that your guess is correct)")
     print(f"\nDecrypt this word: {encrypted_secret}")
 
     # Get the user's guess and compare it to the original word
