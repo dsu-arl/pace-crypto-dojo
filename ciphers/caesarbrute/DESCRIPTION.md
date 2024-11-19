@@ -1,7 +1,6 @@
 ## Challenge Description
 If you manage to intercept a secret message, you likely won't be given the shift amount with it. 
-
-Manually encryption and decryption can be rather tedious. Unlike Julius Caesar, we have modern computers - let's write a script to do the work for us!
+In this challenge, you will try to break the encryption on some intercepted ciphertext! 
 
 ### How It Works:
 
