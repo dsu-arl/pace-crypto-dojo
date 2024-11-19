@@ -6,3 +6,6 @@ challenges: # list each challenge, make a directory for each challenge (must mat
   - id: caesardecrypt
     name: Caesar Cipher Decryption
     allow_privileged: false
+  - id: caesarscript
+    name: Caesar Cipher Scripting
+    allow_privileged: false
