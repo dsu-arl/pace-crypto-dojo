@@ -28,11 +28,11 @@ def play_cipher_game():
     # get secret word from config file
     secret = (pathlib.Path(__file__).parent / ".config").read_text().strip().upper()
     
-    shift = random.randint(7, 20)
+    shift = 17 # making shift constant
 
     # Encrypt the word and print the ciphertext
     encrypted_secret = caesar_cipher_shift(secret, shift)
-    print(f"Some words are too long to decrypt by hand! Try writing a script to help you!")
+    print(f"Some words are too long to decrypt by hand - try writing a script to help you!")
     print(f"\nDecrypt this word: {encrypted_secret}")
     print(f"It has been shifted by +{shift}. \nTo decrypt, you will need to undo the shifting.\n")
 
@@ -40,6 +40,7 @@ def play_cipher_game():
     guess = input("Enter your decrypted word: ").upper()
     if guess == secret:
         print("\nCongratulations, you decrypted it correctly!")
+        print("Here's your flag!")
         print_flag()
     else:
         print("\nSorry, that was incorrect. Better luck next time!")
