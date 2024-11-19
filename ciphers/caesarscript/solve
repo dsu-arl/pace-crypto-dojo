@@ -40,7 +40,7 @@ def play_cipher_game():
     guess = input("Enter your decrypted word: ").upper()
     if guess == secret:
         print("\nCongratulations, you decrypted it correctly!")
-        print("Here's your flag!")
+        print("Here's your flag!\n")
         print_flag()
     else:
         print("\nSorry, that was incorrect. Better luck next time!")
