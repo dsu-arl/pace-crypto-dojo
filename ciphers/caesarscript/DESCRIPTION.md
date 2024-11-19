@@ -1,5 +1,5 @@
 ## Challenge Description
-Manually encryption and decryption can be rather tedious. Unlike Julius Caesar, we have modern computers - let's write a script to do the work for us!
+Manual encryption and decryption can be rather tedious. Unlike Julius Caesar, we have modern computers - let's write a script to do the work for us!
 
 ### How It Works:
 This challenge will give you an encoded word and the amount it was shifted by during the encryption process. You will need to decrypt it. 
